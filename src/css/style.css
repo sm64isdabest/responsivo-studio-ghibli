@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/background.png) no-repeat fixed;
+    background-size: cover;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 11rem;
+    margin-right: 11rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.redes_sociais {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.redes_sociais button {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #ffffff20;
+    justify-content: center;
+    border-color: #fff;
+    border-radius: 999rem;
+    border-width: .063rem;
+    border-style: solid;
+}
+
+.google {
+    padding-top: .188rem;
+}
+
+.principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 11rem;
+    margin-right: 11rem;
+}
+
+.sobre {
+    width: 31.375rem;
+    height: 25.938rem;
+    gap: 3rem;
+    color: #fff;
+}
+
+.botoes {
+    display: flex;
+    gap: 2rem;
+}
+
+.assistir_now,
+.assistir_trailer {
+    display: flex;
+    align-items: center;
+    padding: .625rem 1.75rem;
+    border-radius: .25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+.assistir_now {
+    background: #F1A5B1;
+    color: #0B0A0A;
+    gap: .438rem;
+
+}
+
+.assistir_now img {
+    width: 1.188rem;
+}
+
+.assistir_trailer {
+    border: .125rem solid #F1A5B1;
+    color: white;
+}
+
+.imagem img {
+    width: 30rem;
+}
+
+h1 {
+    font-family: 'Andada Pro', serif;
+    font-size: 2.625rem;
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+}
+
+h4 {
+    padding-left: .25rem;
+    font-family: 'Open Sans', serif;
+    font-size: .875rem;
+    margin-bottom: .75rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Roboto';
+}
+
+p {
+    font-family: 'Archivo', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-bottom: 2.5rem;
+    max-width: 22.5rem;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .redes_sociais {
+        display: none;
+    }
+
+
+    .cabecalho {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        width: 7.5rem;
+    }
+
+    .logo img {
+        max-height: 3rem;
+    }
+
+    .principal {
+        flex-direction: column-reverse;
+    }
+
+    .sobre {
+        width: 20rem;
+        height: 25.938rem;
+    }
+
+    .imagem img {
+        width: 15rem;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+
+    .assistir_now,
+    .assistir_trailer {
+        height: 3.5rem;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1315px) {
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        max-height: 8rem;
+        gap: 10rem;
+        margin: auto;
+        max-width: 42.5rem;
+    }
+
+    .redes_sociais button {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .imagem img {
+        max-width: 25rem;
+    }
+
+    .principal {
+        flex-direction: column-reverse;
+    }
+
+    .sobre {
+        max-width: 27rem;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+
+    p {
+        max-width: fit-content;
+    }
+
+    .assistir_now,
+    .assistir_trailer {
+        height: 3.5rem;
+        justify-content: center;
+    }
+
+}
